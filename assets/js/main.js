@@ -202,9 +202,28 @@
 
 
 /* 9. data-background */
-    $("[data-background]").each(function () {
-      $(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
-      });
+    // $("[data-background]").each(function () {
+    //   $(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
+    //   });
+
+      $("[data-background]").each(function () {
+        var imageUrl = $(this).attr("data-background");
+        var imageUrlMobile = $(this).attr("data-background-mobile"); // introduceți aici URL-ul imaginii redimensionate pentru mobil
+    
+        // Verificați dacă este disponibil URL-ul imaginii redimensionate pentru mobil
+        if (imageUrlMobile !== "") {
+            // Folosiți media queries pentru a aplica imaginea redimensionată numai pe dispozitivele mobile
+            var mq = window.matchMedia("(max-width: 767px)"); // schimbați aceasta valoare la dimensiunea dorită pentru dispozitivele mobile
+            if (mq.matches) {
+                $(this).css("background-image", "url(" + imageUrlMobile + ")");
+            } else {
+                $(this).css("background-image", "url(" + imageUrl + ")");
+            }
+        } else {
+            $(this).css("background-image", "url(" + imageUrl + ")");
+        }
+    });
+    
 
 
 /* 10. WOW active */

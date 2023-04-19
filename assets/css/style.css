@@ -3052,18 +3052,22 @@ hr {
     color: #fff;
     font-size: 70px;
     font-weight: 900;
-    text-transform: uppercase
+    text-transform: uppercase;
+    
 }
+
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .slider-area .hero-cap h2 {
-        font-size: 50px
+        font-size: 25px;
+        
     }
 }
 
 @media (max-width: 575px) {
     .slider-area .hero-cap h2 {
-        font-size: 50px
+        font-size: 25px
     }
 }
 
@@ -3084,6 +3088,18 @@ hr {
     transform: translateY(-50%)
 }
 
+@media screen and (max-width: 767px) {
+    .slider-area .hero-cap nav {
+        padding-left: 55px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider-area .hero-cap nav::before {
+        width: 45px;
+    }
+}
+
 .slider-area .hero-cap .breadcrumb {
     background: none;
     padding: 0;
@@ -3094,6 +3110,14 @@ hr {
     color: #ff5f13;
     font-size: 17px;
     text-transform: uppercase
+}
+
+@media screen and (max-width: 767px) {
+    .slider-area .hero-cap .breadcrumb a {
+        
+        font-size: 13px;
+        
+    }
 }
 
 .slider-area .hero-cap .breadcrumb-item+.breadcrumb-item::before {
@@ -3387,25 +3411,29 @@ hr {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .support-company-area .support-wrapper .right-content .support-img-cap {
-        padding: 27px 18px
+        padding: 27px 18px;
+        
     }
 }
 
 @media (max-width: 575px) {
     .support-company-area .support-wrapper .right-content .support-img-cap {
-        padding: 35px 0px
+        padding: 25px 0px;
+        opacity: .6;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .support-company-area .support-wrapper .right-content .support-img-cap {
-        padding: 35px 18px
+        padding: 35px 18px;
+        opacity: .6;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .support-company-area .support-wrapper .right-content .support-img-cap {
-        padding: 35px 18px
+        padding: 35px 18px;
+        
     }
 }
 
@@ -3420,8 +3448,8 @@ hr {
 
 @media (max-width: 575px) {
     .support-company-area .support-wrapper .right-content .support-img-cap span {
-        padding: 6px 40px;
-        font-size: 38px
+        /* padding: 6px 40px; */
+        font-size: 30px
     }
 }
 
@@ -3439,7 +3467,7 @@ hr {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .support-company-area .support-wrapper .right-content .support-img-cap span {
-        font-size: 35px
+        font-size: 30px
     }
 }
 
@@ -3449,7 +3477,7 @@ hr {
     margin: 0;
     font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: .5em
+    letter-spacing: .4em
 }
 
 .count-area {

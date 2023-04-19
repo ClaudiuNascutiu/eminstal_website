@@ -3033,6 +3033,7 @@ hr {
 .slider-area .hero-cap .breadcrumb-item + .breadcrumb-item::before {
   color: #ff5f13;
 }
+
 @media (max-width: 575px) {
   .slider-area .hero-cap.hero-cap2 {
     padding-top: 50px;
