@@ -56,10 +56,10 @@
                                 </div>
                                 <!-- <div class="header-info-right">
                                     <ul class="header-social">    
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                       <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                       
                                     </ul>
                                 </div> -->
                             </div>
@@ -122,7 +122,9 @@
         <div class="slider-area ">
             <div class="slider-active">
                 <div class="single-slider  hero-overly slider-height d-flex align-items-center"
-                    data-background="assets/img/hero/h1_hero.jpg" data-background-mobile="assets/img/hero/h1_hero_mobile.png">
+                    data-background="assets/img/hero/h1_hero.png"
+                    data-background-mobile="assets/img/hero/h1_hero_mobile.png"
+                    data-background-tablet="assets/img/hero/h1_hero_tablet.png">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-11">
@@ -132,7 +134,7 @@
                                         <h1>EMINSTAL</h1>
                                     </div>
                                     <div class="hero-text2 mt-110" data-animation="fadeInUp" data-delay=".9s">
-                                        <span><a href="services.html">Nos services</a></span>
+                                        <!-- <span><a href="services.html">Nos services</a></span> -->
                                     </div>
                                 </div>
                             </div>
@@ -198,8 +200,7 @@
                                 <img src="assets/img/service/servicess1.jpg" alt="">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.html">Chauffage</a></h4>
-                                <!-- <a href="services_details.html" class="more-btn">Read More <i class="ti-plus"></i></a> -->
+                                <h4><a >Chauffage</a></h4>
                             </div>
                             <div class="service-icon">
                                 <img src="assets/img/icon/services_icon1.png" alt="">
@@ -212,8 +213,7 @@
                                 <img src="assets/img/service/servicess2.png" alt="">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.html">Plomberie</a></h4>
-                                <!-- <a href="services_details.html" class="more-btn">Read More <i class="ti-plus"></i></a> -->
+                                <h4><a >Plomberie</a></h4>
                             </div>
                             <div class="service-icon">
                                 <img src="assets/img/icon/services_icon1.png" alt="">
@@ -226,8 +226,7 @@
                                 <img src="assets/img/service/servicess3.png" alt="">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.htmlaa">Climatisation</a></h4>
-                                <!-- <a href="services_details.html" class="more-btn">Read More <i class="ti-plus"></i></a> -->
+                                <h4><a >Climatisation</a></h4>
                             </div>
                             <div class="service-icon">
                                 <img src="assets/img/icon/services_icon1.png" alt="">
@@ -240,8 +239,7 @@
                                 <img src="assets/img/service/servicess4.jpg" alt="">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.html">Installations de gaz</a></h4>
-                                <!-- <a href="services_details.html" class="more-btn">Read More <i class="ti-plus"></i></a> -->
+                                <h4><a >Installations de gaz</a></h4>
                             </div>
                             <div class="service-icon">
                                 <img src="assets/img/icon/services_icon1.png" alt="">
@@ -254,8 +252,7 @@
                                 <img src="assets/img/service/servicess5.png" alt="">
                             </div>
                             <div class="service-cap">
-                                <h4><a href="services_details.html">Calorifuge</a></h4>
-                                <!-- <a href="services_details.html" class="more-btn">Read More <i class="ti-plus"></i></a> -->
+                                <h4><a>Calorifuge</a></h4>
                             </div>
                             <div class="service-icon">
                                 <img src="assets/img/icon/services_icon1.png" alt="">
@@ -279,44 +276,54 @@
                                 </div>
                                 <span class="back-text">Galerie</span>
                             </div>
-                            <div>
-                                <button onclick="window.location.href='project.html'">Plus de projets >></button>
-                            </div>
+                           
+                                <!-- <button onclick="window.location.href='project.html'">Plus de projets >></button> -->
+                                <div class="wrapper-button">
+                                    <a class="cta" href="project.html">
+                                      <span>Plus de projets</span>
+                                      <span class="button-projets">
+                                        <svg class="svg" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                          <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                            <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                            <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                          </g>
+                                        </svg>
+                                      </span> 
+                                    </a>
+                                  </div>
+                            
                         </div>
-
                     </div>
                 </div>
 
                 <section class="hero-section">
                     <div class="card-grid-project">
-                        <a class="card-new">
+                        <a class="card-new" onclick="window.location.href='project_details_airfrance.html'">
                             <div class="card__background"
                                 style="background-image: url(assets/img/project/AirFrance/airfrance-first.png)">
                             </div>
                             <div class="card__content">
-                                <p class="card__category"><button
-                                        onclick="window.location.href='project_details_airfrance.html'">Galerie>></button></p>
-                                <h3 class="card__heading">Air France</h3>
+                                <!-- <p class="card__category"><button
+                                        onclick="window.location.href='project_details_airfrance.html'">Galerie>></button>
+                                </p> -->
+                                <h3 class="card__heading"></h3>
                             </div>
                         </a>
-                        <a class="card-new" >
+                        <a class="card-new" onclick="window.location.href='project_details_ikea.html'">
                             <div class="card__background"
                                 style="background-image: url(assets/img/project/Ikea/ikea-first.png)">
                             </div>
                             <div class="card__content">
-                                <p class="card__category"><button
-                                        onclick="window.location.href='project_details_ikea.html'">Galerie>></button></p>
-                                <h3 class="card__heading">Ikea</h3>
+                                <h3 class="card__heading"></h3>
                             </div>
                         </a>
-                        <a class="card-new">
+                        <a class="card-new" onclick="window.location.href='project_details_loreal.html'">
                             <div class="card__background"
                                 style="background-image: url(assets/img/project/Loreal/loreal-first.png)">
                             </div>
                             <div class="card__content">
-                                <p class="card__category"><button
-                                        onclick="window.location.href='project_details_loreal.html'">Galerie>></button></p>
-                                <h3 class="card__heading">L'Oreal Paris</h3>
+                                <h3 class="card__heading"></h3>
                             </div>
                             </li>
                         </a>
@@ -326,7 +333,8 @@
         </section>
         <!-- Project Area End -->
         <!-- contact with us Start -->
-        <section class="contact-with-area" data-background="assets/img/gallery/section-bg2.jpg" data-background-mobile="assets/img/gallery/section-bg2.jpg">
+        <section class="contact-with-area" data-background="assets/img/gallery/section-bg2.jpg"
+            data-background-mobile="assets/img/gallery/section-bg2.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-9 offset-xl-1 offset-lg-1">
@@ -368,13 +376,14 @@
         <!-- CountDown Area Start -->
         <div class="count-area">
             <div class="container">
-                <div class="count-wrapper count-bg" data-background="assets/img/gallery/section-bg3.jpg" data-background-mobile="assets/img/gallery/section-bg3.jpg">
+                <div class="count-wrapper count-bg" data-background="assets/img/gallery/section-bg3.jpg"
+                    data-background-mobile="assets/img/gallery/section-bg3.jpg">
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="count-clients">
                                 <div class="single-counter">
                                     <div class="count-number">
-                                        <span class="counter">30</span>
+                                        <span class="counter">45</span>
                                     </div>
                                     <div class="count-text">
                                         <p>Projets</p>
@@ -387,7 +396,7 @@
                             <div class="count-clients">
                                 <div class="single-counter">
                                     <div class="count-number">
-                                        <span class="counter">76</span>
+                                        <span class="counter">45</span>
                                     </div>
                                     <div class="count-text">
                                         <p>Clients</p>
@@ -453,8 +462,13 @@
                                 <div class="footer-tittle">
                                     <h4>Contact</h4>
                                     <div class="footer-pera">
-                                        <p class="info1">102 Avenue des Champs Elysees 75008 Paris</p>
-                                    </div>
+                                        <a class="info1" href='https://goo.gl/maps/h1FNgcwHp4Su9SFs9'>
+                                            <a
+                                                href='https://maps.apple.com/?address=102%20Avenue%20des%20Champs-Elys%C3%A9es,%2075008%20Paris,%20France&ll=48.871927,2.302361&q=102%20Avenue%20des%20Champs-Elys%C3%A9es'>
+                                                102 Avenue des Champs Elysees 75008 Paris
+                                            </a>
+                                        </a>
+                                    </div><br>
                                     <ul>
                                         <li><a href="tel:+33 769 557 585">Phone: +(33) 769 557 585</a></li>
                                         <li><a href="mailto:ebanc@eminstal.fr">Email: ebanc@eminstal.fr</a></li>
@@ -462,6 +476,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="col-lg-3 col-md-6 col-sm-8">
                             <div class="single-footer-caption mb-50">
                                 <!-- Form -->
@@ -474,17 +489,17 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Copy-Right -->
+                       
                         <div class="row align-items-center">
                             <div class="col-xl-12 ">
                                 <div class="footer-copy-right">
-                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    <p>
                                         &copy;
                                         <script>document.write(new Date().getFullYear());</script> |
                                         This template is made</i> by <a href="https://nascutiuclaudiu.ro"
                                             target="_blank">&nbsp; <img src="assets/img/logo/MyLogo.png" width="25px"
                                                 height="25px">&nbsp; Nășcuțiu Claudiu </a>
-                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        
                                     </p>
                                 </div>
                             </div>
