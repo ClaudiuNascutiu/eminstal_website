@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,60 +21,62 @@ body {
 
 
 @media only screen and (min-width: 200px) and (max-width: 376px) {
-  .cont{
+  .cont {
     height: 45vh;
   }
 
-  .el__index{
+  .el__index {
     visibility: hidden;
   }
 }
 
-@media  screen and (min-width: 378px) and (max-width: 767px) {
-  .cont{
+@media screen and (min-width: 378px) and (max-width: 767px) {
+  .cont {
     height: 35vh;
   }
 
-  .el__index{
+  .el__index {
     visibility: hidden;
   }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .cont{
+  .cont {
     height: 45vh;
   }
 
-  .el__index{
+  .el__index {
     visibility: hidden;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .el__close-btn{
+  .el__close-btn {
     width: 20px;
     height: 20px;
   }
 
-  .el__close-btn::after{
+  .el__close-btn::after {
     height: 3px;
   }
-  .el__close-btn::before{
+
+  .el__close-btn::before {
     height: 3px;
   }
-  
+
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
-    .cont{
-      height: 40vh;
-    }
+  .cont {
+    height: 40vh;
+  }
 }
 
 .cont__inner {
   position: relative;
   height: 100%;
 }
+
 .cont__inner:hover .el__bg:after {
   opacity: 1;
 }
@@ -87,23 +91,28 @@ body {
   transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s;
   will-change: transform, width, opacity;
 }
+
 .el:not(.s--active) {
   cursor: pointer;
 }
+
 .el__overflow {
   overflow: hidden;
   position: relative;
   height: 100%;
 }
+
 .el__inner {
   overflow: hidden;
   position: relative;
   height: 100%;
   transition: transform 1s;
 }
+
 .cont.s--inactive .el__inner {
   transform: translate3d(0, 100%, 0);
 }
+
 .el__bg {
   position: relative;
   width: calc(100vw - 140px);
@@ -111,6 +120,7 @@ body {
   transition: transform 0.6s 0.7s;
   will-change: transform;
 }
+
 .el__bg:before {
   content: "";
   position: absolute;
@@ -123,12 +133,15 @@ body {
   transition: transform 1s;
   transform: translate3d(0, 0, 0) scale(1);
 }
+
 .cont.s--inactive .el__bg:before {
   transform: translate3d(0, -100%, 0) scale(1.2);
 }
+
 .el.s--active .el__bg:before {
   transition: transform 0.8s;
 }
+
 .el__bg:after {
   content: "";
   z-index: 1;
@@ -141,10 +154,12 @@ body {
   opacity: 0;
   transition: opacity 0.5s;
 }
+
 .cont.s--el-active .el__bg:after {
   transition: opacity 0.5s 1.4s;
   opacity: 1 !important;
 }
+
 .el__preview-cont {
   z-index: 2;
   display: flex;
@@ -157,20 +172,24 @@ body {
   height: 100%;
   transition: all 0.3s 1.2s;
 }
+
 .cont.s--inactive .el__preview-cont {
   opacity: 0;
   transform: translateY(10px);
 }
+
 .cont.s--el-active .el__preview-cont {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.5s;
 }
+
 .el__heading {
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
 }
+
 .el__content {
   z-index: -1;
   position: absolute;
@@ -183,17 +202,20 @@ body {
   pointer-events: none;
   transition: all 0.1s;
 }
+
 .el.s--active .el__content {
   z-index: 2;
   opacity: 1;
   pointer-events: auto;
   transition: all 0.5s 1.4s;
 }
+
 .el__text {
   text-transform: uppercase;
   font-size: 40px;
   color: #fff;
 }
+
 .el__close-btn {
   z-index: -1;
   position: absolute;
@@ -206,13 +228,16 @@ body {
   transition: all 0s 0.45s;
   cursor: pointer;
 }
+
 .el.s--active .el__close-btn {
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
   transition: all 0s 1.4s;
 }
-.el__close-btn:before, .el__close-btn:after {
+
+.el__close-btn:before,
+.el__close-btn:after {
   content: "";
   position: absolute;
   left: 0;
@@ -224,23 +249,30 @@ body {
   opacity: 0;
   transition: opacity 0s;
 }
-.el.s--active .el__close-btn:before, .el.s--active .el__close-btn:after {
+
+.el.s--active .el__close-btn:before,
+.el.s--active .el__close-btn:after {
   opacity: 1;
 }
+
 .el__close-btn:before {
   transform: rotate(45deg) translateX(100%);
 }
+
 .el.s--active .el__close-btn:before {
   transition: all 0.3s 1.4s cubic-bezier(0.72, 0.09, 0.32, 1.57);
   transform: rotate(45deg) translateX(0);
 }
+
 .el__close-btn:after {
   transform: rotate(-45deg) translateX(100%);
 }
+
 .el.s--active .el__close-btn:after {
   transition: all 0.3s 1.55s cubic-bezier(0.72, 0.09, 0.32, 1.57);
   transform: rotate(-45deg) translateX(0);
 }
+
 .el__index {
   overflow: hidden;
   position: absolute;
@@ -256,28 +288,35 @@ body {
   transition: transform 0.5s, opacity 0.3s 1.4s;
   transform: translate3d(0, 1vw, 0);
 }
+
 .el:hover .el__index {
   transform: translate3d(0, 0, 0);
 }
+
 .cont.s--el-active .el__index {
   transition: transform 0.5s, opacity 0.3s;
   opacity: 0;
 }
-.el__index-back, .el__index-front {
+
+.el__index-back,
+.el__index-front {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
 }
+
 .el__index-back {
   color: #e1e6eb;
   opacity: 0;
   transition: opacity 0.25s 0.25s;
 }
+
 .el:hover .el__index-back {
   transition: opacity 0.25s;
   opacity: 1;
 }
+
 .el__index-overlay {
   overflow: hidden;
   position: relative;
@@ -285,6 +324,7 @@ body {
   transition: transform 0.5s 0.1s;
   color: transparent;
 }
+
 .el__index-overlay:before {
   content: attr(data-index);
   position: absolute;
@@ -296,122 +336,153 @@ body {
   transform: translate3d(0, -100%, 0);
   transition: transform 0.5s 0.1s;
 }
+
 .el:hover .el__index-overlay {
   transform: translate3d(0, 0, 0);
 }
+
 .el:hover .el__index-overlay:before {
   transform: translate3d(0, 0, 0);
 }
+
 .el:nth-child(1) {
   transform: translate3d(0%, 0, 0);
   transform-origin: 50% 50%;
 }
+
 .cont.s--el-active .el:nth-child(1):not(.s--active) {
   transform: scale(0.5) translate3d(0%, 0, 0);
   opacity: 0;
   transition: transform 0.95s, opacity 0.95s;
 }
+
 .el:nth-child(1) .el__inner {
   transition-delay: 0s;
 }
+
 .el:nth-child(1) .el__bg {
   transform: translate3d(0%, 0, 0);
 }
+
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0s;
   /* background-image: url("assets/img/project/AirFrance/airfrance-first.png"); */
 }
+
 .el:nth-child(2) {
   transform: translate3d(105.2083333333%, 0, 0);
   transform-origin: 155.2083333333% 50%;
 }
+
 .cont.s--el-active .el:nth-child(2):not(.s--active) {
   transform: scale(0.5) translate3d(105.2083333333%, 0, 0);
   opacity: 0;
   transition: transform 0.95s, opacity 0.95s;
 }
+
 .el:nth-child(2) .el__inner {
   transition-delay: 0.1s;
 }
+
 .el:nth-child(2) .el__bg {
   transform: translate3d(-19.2%, 0, 0);
 }
+
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.1s;
 }
+
 .el:nth-child(3) {
   transform: translate3d(210.4166666667%, 0, 0);
   transform-origin: 260.4166666667% 50%;
 }
+
 .cont.s--el-active .el:nth-child(3):not(.s--active) {
   transform: scale(0.5) translate3d(210.4166666667%, 0, 0);
   opacity: 0;
   transition: transform 0.95s, opacity 0.95s;
 }
+
 .el:nth-child(3) .el__inner {
   transition-delay: 0.2s;
 }
+
 .el:nth-child(3) .el__bg {
   transform: translate3d(-38.4%, 0, 0);
 }
+
 .el:nth-child(3) .el__bg:before {
   transition-delay: 0.2s;
 }
+
 .el:nth-child(4) {
   transform: translate3d(315.625%, 0, 0);
   transform-origin: 365.625% 50%;
 }
+
 .cont.s--el-active .el:nth-child(4):not(.s--active) {
   transform: scale(0.5) translate3d(315.625%, 0, 0);
   opacity: 0;
   transition: transform 0.95s, opacity 0.95s;
 }
+
 .el:nth-child(4) .el__inner {
   transition-delay: 0.3s;
 }
+
 .el:nth-child(4) .el__bg {
   transform: translate3d(-57.6%, 0, 0);
 }
+
 .el:nth-child(4) .el__bg:before {
   transition-delay: 0.3s;
 }
+
 .el:nth-child(5) {
   transform: translate3d(420.8333333333%, 0, 0);
   transform-origin: 470.8333333333% 50%;
 }
+
 .cont.s--el-active .el:nth-child(5):not(.s--active) {
   transform: scale(0.5) translate3d(420.8333333333%, 0, 0);
   opacity: 0;
   transition: transform 0.95s, opacity 0.95s;
 }
+
 .el:nth-child(5) .el__inner {
   transition-delay: 0.4s;
 }
+
 .el:nth-child(5) .el__bg {
   transform: translate3d(-76.8%, 0, 0);
 }
+
 .el:nth-child(5) .el__bg:before {
   transition-delay: 0.4s;
 }
+
 .el:hover .el__bg:after {
   opacity: 0;
 }
+
 .el.s--active {
   z-index: 1;
   width: 100%;
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s, width 0.7s 0.7s, z-index 0s;
 }
+
 .el.s--active .el__bg {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s;
 }
+
 .el.s--active .el__bg:before {
   transition-delay: 0.6s;
   transform: scale(1.1);
 }
 
-.img_width{
+.img_width {
   width: 100%;
   height: 100%;
 }
